@@ -1,11 +1,14 @@
 # 邓志鑫的基本信息
 
-* 姓名：邓志鑫
-* 籍贯：广东普宁
-* 爱好：摄影撸猫
-* 教育背景：广东白云学院 — 软件工程专业 — 2021届本科毕业生
-* 手机号码：15625653671
-* 邮箱地址：dengzhixin2014@qq.com
-* 个人博客：https://dengzhi.xin
-* GitHub：https://github.com/dengzhixin
+HELLO大家好，我叫邓志鑫，也可以叫我胖虎，来自广东白云学院软件工程专业
+
+我的爱好有：
+* 摄影
+* 撸猫
+
+可以在以下地方找到我
+1. 邮箱地址：dengzhixin2014@qq.com
+2. 个人博客：https://dengzhi.xin
+3. GitHub：https://github.com/dengzhixin
+ 
 
