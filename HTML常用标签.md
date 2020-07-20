@@ -1,7 +1,7 @@
 # a
 * href 是hyper refrence（超级的引用） 的缩写
 
-* 有以下取值：
+* href有以下取值：
    1. 网址
    `https//google.com`  `http//google.com`  `//google.com` 这三个值优先使用**//**，会自动适应应该使用http还是https
 
