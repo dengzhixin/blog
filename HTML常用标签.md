@@ -1,21 +1,21 @@
 # a
 * href 是hyper refrence（超级的引用） 的缩写
 
-  有以下取值：
-   网址
+* 有以下取值：
+   1. 网址
    `https//google.com`  `http//google.com`  `//google.com` 这三个值优先使用**//**，会自动适应应该使用http还是https
 
-   路径
+   2. 路径
    `/a/b/c.html`中的/指的是项目的根目录而不是系统的根目录(使用http服务启动的项目)
 
-   伪协议
+   3. 伪协议
    `javascriput:aler();`执行JavaScript代码，可以使用 `href="javascripit:;"`来实现a标签点击后不执行任何操作
 
-   ID 跳转到制定的锚点
+   4. ID 跳转到制定的锚点
 
-   mailto:邮箱
+   5. mailto:邮箱
 
-   tel:手机号
+   6. tel:手机号
  
 * target
  内置取值：
