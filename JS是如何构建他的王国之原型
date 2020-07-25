@@ -1,0 +1,44 @@
+## 构造顺序
+1. 创建根对象`#101`(toString) ,根对象没有名字
+2. 创建函数的原型`#208`(call、apply),原型`__p`为`#101`
+3. 创建数组的对象 `#404`(push、pop),原型`__p`为`#101`
+4. 创建`Function` `#342`,原型`__p`为`#208`
+5. 让`Function.prototype`等于`#208`
+6. 此时可以发现`Function.prototype`和`Function.__p` 都是`#208`
+7. 用`Function`创建了`Object`（实际没有名字）
+8. 让`Object.prototype`等于`#101`（根对象有名字了）
+9. 用`Function`创建了`Array`（实际没有名字）
+10. 让`Array.prototype`等于`#404`
+11. 创建`window`对象(不属于JS世界，是浏览器创建的)
+12. 用`window`的`'Object'``'Array'`属性给7、9命名
+13. 注意：JS创建对象时是不会给一个对象起名字的
+
+> 上面的`__p`为`__proto__`的简写,`#nnn`指的是对象在内存堆区的地址
+## 三个方法快速找到原型
+* `对象.__proto__===其构造函数.prototype`
+* `Object.prototype`是所有对象的(直接或间接)的原型
+* 所有的函数都是由Function构造的
+
+## 你们找出下面的对象的原型吗？
+问：
+* `Object.prototype`
+* `obj`
+* `Array`
+* `Object`
+* `Function`
+* `obj.toString`
+
+**不要偷看答案哦！！**
+**不要偷看答案哦！！**
+**不要偷看答案哦！！**
+**不要偷看答案哦！！**
+答：
+* `Object.prototype.__proto__ === null`
+* `obj.__proto__ === Object.prototype`
+* `Array.__proto__ === Function.prototype`
+* `Object.__proto__ === Function.protoype` 
+* `Function.__proto__ === Function.prototype`
+* `obj.toString.__proto__ ==Function.prototype`
+
+验算：
+![](https://dengzhixin-halo.oss-cn-shenzhen.aliyuncs.com/halo/image_1595694634884.png?x-oss-process=style/pic)
